@@ -40,7 +40,6 @@ class AddQuestion extends Component{
         fetch(this.state.askquestion_url,{
             method:'POST',
             headers: new Headers({
-            //  'Authorization': `JWT ${this.state.token}`,
              'Authorization': 'JWT '+ this.cookies.get('userJwtToken').token, 
              'Content-Type': 'application/json',
              'Accept': 'application/json',
@@ -51,6 +50,7 @@ class AddQuestion extends Component{
                 if (response.ok) {
                     return response.json();
                 } else {
+                            
                     var error = new Error(response.statusText);
                     error.response = response;
                     console.log(response.statusText);

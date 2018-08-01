@@ -58,7 +58,6 @@ class Answers extends Component{
                         Answered By : {current.user_profile.user.first_name}</h5>
                     <br/><br/></div><br/>
                     <strong>Answer</strong> <hr/>
-                    <br/><br/><br/>
                 </div>
                 )}
                 <AddAnswer isLoggedIn={this.state.isAuthenticated}/>

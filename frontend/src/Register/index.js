@@ -3,6 +3,9 @@ import Cookies from 'universal-cookie';
 import { withRouter } from 'react-router'
 
 class Register extends Component{
+    constructor(props) {
+        super(props);
+    }
     cookies = new Cookies();
     state = {
         auth_url : 'http://127.0.0.1:8000/api-basictoken-auth/',
@@ -53,14 +56,13 @@ class Register extends Component{
 
     submit = (e) =>{
         var data=JSON.stringify({
-            // user : {
+            user : {
                 username: this.state.username,
                 first_name: this.state.first_name,
                 last_name: this.state.last_name,
                 password: this.state.password,
+            },
                 location: this.state.location,
-            // },
-          
         });
         fetch('http://127.0.0.1:8000/forum/api/auth/register/',{
             method:'POST',
@@ -74,18 +76,17 @@ class Register extends Component{
                 if (response.ok) {
                     return response.json();
                   } else {
-                    
                     var error = new Error(response.statusText);
                     error.response = response;
-                      console.log(response.statusText);
+                    console.log(response.statusText);
                     alert(error,response.statusText);
                     throw error
                   }    
             })
         .then(responseJson => {
-            this.setState({
-                status:true
-            });
+            // this.setState({
+            //     status:true
+            // });
             this.props.history.push('/forum/templateview/login/');
         })
         .catch(e => {console.log (e);});
@@ -95,7 +96,7 @@ class Register extends Component{
     render(){
         return (
             <div>
-                <form class = "modal-content animate">
+                <form class = "modal-content animate"><br/>
                 <label for="first_name"><b> First_Name </b></label>
                 <input onChange={this.saveFirst_name} type="text" placeholder="Enter first_name"/><br/>
                 <label for="last_name"><b> Last_Name </b></label>
@@ -104,7 +105,7 @@ class Register extends Component{
                 <input onChange={this.saveUsername} type="text" placeholder="Enter username"/><br/>
                 <label for="password"><b> Password </b></label>
                 <input onChange={this.savePassword} type="password" placeholder="Enter Password"/><br/>
-                <button onClick={this.submit} className={"btn btn-primary"} value="Register">Register</button>
+                <label for="location"><b> Location </b></label>
                 <input onChange={this.saveLocation} type="text" placeholder="Enter Location"/><br/>
                 <button onClick={this.submit} className={"btn btn-primary"} value="Register">Register</button>
                 </form>

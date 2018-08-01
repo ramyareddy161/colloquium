@@ -88,7 +88,7 @@ class App extends Component {
                 updateStatus={this.updateLoginStatus}/>
                 }
               />
-              <Route exact path = "/forum/templateview/register" component={Register}/>
+              <Route exact path = "/forum/templateview/register" component={Register} />
               <Route exact path="/forum/templateview/questions/:id" render={(props) =>
                  <Answers {...props} updateHeading={this.updateTitle} />}/>
               <Route exact path="/forum/templateview/addquestion" render={props => this.state.isAuthenticated
