@@ -75,7 +75,7 @@ class App extends Component {
          updateStatus={this.updateLoginStatus}/>
         <Router>
           <Switch>
-              <Route exact path="/forum" render = {(props)=>
+              <Route exact path="/forum/templateview" render = {(props)=>
                <Questions 
                   isAuthenticated={this.state.isAuthenticated}
                   updateHeading={this.updateTitle}
