@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23b9e619-735d-4dbc-b253-4490b868bd1a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/colloquium.wsgi" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Procfile.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/colloquium.wsgi.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/runtime.txt.txt" afterPath="" />
-    </list>
+    <list default="true" id="23b9e619-735d-4dbc-b253-4490b868bd1a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

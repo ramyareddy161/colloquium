@@ -75,12 +75,12 @@ class App extends Component {
          updateStatus={this.updateLoginStatus}/>
         <Router>
           <Switch>
-              <Route exact path="/" render = {(props)=>
+              <Route exact path="/forum" render = {(props)=>
                <Questions 
                   isAuthenticated={this.state.isAuthenticated}
                   updateHeading={this.updateTitle}
                 />}/>
-              <Route exact path="/login" render={(props) => this.state.isAuthenticated? 
+              <Route exact path="/forum/login" render={(props) => this.state.isAuthenticated? 
               <Redirect to="/"/>:
                 <Login 
                 isAuthenticated={this.state.isAuthenticated}
@@ -88,12 +88,12 @@ class App extends Component {
                 updateStatus={this.updateLoginStatus}/>
                 }
               />
-              <Route exact path = "/register" component={Register} />
-              <Route exact path="/questions/:id" render={(props) =>
+              <Route exact path = "/forum/register" component={Register} />
+              <Route exact path="/forum/questions/:id" render={(props) =>
                  <Answers {...props} updateHeading={this.updateTitle} />}/>
-              <Route exact path="/addquestion" render={props => this.state.isAuthenticated
+              <Route exact path="/forum/addquestion" render={props => this.state.isAuthenticated
                ? <AddQuestion token={this.state.token} isLoggedIn={this.state.isAuthenticated}/>
-               :<Redirect to="/login" />}/>
+               :<Redirect to="/forum/login" />}/>
           </Switch>
         </Router>
       </div>

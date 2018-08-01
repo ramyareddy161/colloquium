@@ -27,7 +27,7 @@ export class Header extends Component{
 
     login = (props) =>
     {
-        <Redirect to= "/login"/>
+        <Redirect to= "/forum/login"/>
     }
     
     render(){
