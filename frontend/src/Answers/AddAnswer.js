@@ -50,7 +50,7 @@ class AddAnswer extends Component{
                 description:null,
             });
             this.setState(prev=>({version:prev.version+1}));
-            this.props.history.push('/forum/templateview/questions/'+this.props.match.params.id+'/');        
+            this.props.history.push('/questions/'+this.props.match.params.id+'/');        
         })
         .catch(e => {console.log (e);});
     }

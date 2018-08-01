@@ -75,25 +75,25 @@ class App extends Component {
          updateStatus={this.updateLoginStatus}/>
         <Router>
           <Switch>
-              <Route exact path="/forum/templateview" render = {(props)=>
+              <Route exact path="/" render = {(props)=>
                <Questions 
                   isAuthenticated={this.state.isAuthenticated}
                   updateHeading={this.updateTitle}
                 />}/>
-              <Route exact path="/forum/templateview/login" render={(props) => this.state.isAuthenticated? 
-              <Redirect to="/forum/templateview"/>:
+              <Route exact path="/login" render={(props) => this.state.isAuthenticated? 
+              <Redirect to="/"/>:
                 <Login 
                 isAuthenticated={this.state.isAuthenticated}
                 username={this.state.username} updateUsername={this.updateUsername} 
                 updateStatus={this.updateLoginStatus}/>
                 }
               />
-              <Route exact path = "/forum/templateview/register" component={Register} />
-              <Route exact path="/forum/templateview/questions/:id" render={(props) =>
+              <Route exact path = "/register" component={Register} />
+              <Route exact path="/questions/:id" render={(props) =>
                  <Answers {...props} updateHeading={this.updateTitle} />}/>
-              <Route exact path="/forum/templateview/addquestion" render={props => this.state.isAuthenticated
+              <Route exact path="/addquestion" render={props => this.state.isAuthenticated
                ? <AddQuestion token={this.state.token} isLoggedIn={this.state.isAuthenticated}/>
-               :<Redirect to="/forum/templateview/login" />}/>
+               :<Redirect to="/login" />}/>
           </Switch>
         </Router>
       </div>

@@ -59,7 +59,7 @@ class AddQuestion extends Component{
                   }
             })
         .then(responseJson => {
-            this.props.history.push('/forum/templateview/');
+            this.props.history.push('/');
         })
         .catch(e => {console.log (e);});
     }

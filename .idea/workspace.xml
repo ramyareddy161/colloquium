@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="23b9e619-735d-4dbc-b253-4490b868bd1a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Answers/index.js" afterPath="$PROJECT_DIR$/frontend/src/Answers/index.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" afterPath="$PROJECT_DIR$/frontend/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Questions/AddQuestion.js" afterPath="$PROJECT_DIR$/frontend/src/Questions/AddQuestion.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Register/index.js" afterPath="$PROJECT_DIR$/frontend/src/Register/index.js" />
-      <change beforePath="$PROJECT_DIR$/webpack-stats.dev.json" afterPath="$PROJECT_DIR$/webpack-stats.dev.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
