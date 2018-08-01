@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23b9e619-735d-4dbc-b253-4490b868bd1a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/colloquium/settings.py" afterPath="$PROJECT_DIR$/colloquium/settings.py" />
+      <change beforePath="$PROJECT_DIR$/colloquium/wsgi.py" afterPath="$PROJECT_DIR$/colloquium/wsgi.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/colloquium/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -23,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/colloquium/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,8 +125,8 @@
         <option value="$PROJECT_DIR$/forum/urls.py" />
         <option value="$PROJECT_DIR$/forum/serializers.py" />
         <option value="$PROJECT_DIR$/frontend/config/webpackDevServer.config.js" />
-        <option value="$PROJECT_DIR$/colloquium/wsgi.py" />
         <option value="$PROJECT_DIR$/colloquium/settings.py" />
+        <option value="$PROJECT_DIR$/colloquium/wsgi.py" />
       </list>
     </option>
   </component>
@@ -698,18 +698,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/colloquium/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/colloquium/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colloquium/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
