@@ -136,15 +136,15 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'colloquiumdb',
-#         'HOST': 'localhost',
-#         'USER': "root",
-#         'PASSWORD': "root"
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'colloquiumdb',
+        'HOST': 'localhost',
+        'USER': "root",
+        'PASSWORD': "root"
+    }
+}
 
 
 REST_FRAMEWORK = {
