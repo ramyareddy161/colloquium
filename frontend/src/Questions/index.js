@@ -29,18 +29,18 @@ class Questions extends Component{
         return(
             <div>
                 <div class = "topnav" align = "right">
-                    <Link style={{padding:"0 10px"}} to={'/forum/addquestion'}>Add Question </Link>
+                    <Link style={{padding:"0 10px"}} to={'/forum/templateview/addquestion'}>Add Question </Link>
                 {this.props.isAuthenticated?<div></div>:
-                    <Link style={{padding:"0 10px"}} to={'/forum/register'}>Register</Link>}
+                    <Link style={{padding:"0 10px"}} to={'/forum/templateview/register'}>Register</Link>}
                 {this.props.isAuthenticated?<div></div>:
-                <Link style={{padding:"0 10px"}} to={'/forum/login'}>  Login  </Link> }
+                <Link style={{padding:"0 10px"}} to={'/forum/templateview/login'}>  Login  </Link> }
                 </div>
                 <h2> Questions List </h2>
                 {
                     this.state.QuestionsList.map((currentObj) =>
                     <div class="card"  style={{border:"1px groove",width:"80%",position:'relative'}}>
                         <div class="container">
-                        <h2><Link  to={'/forum/questions/'+currentObj.id +'/'}>{currentObj.title}</Link></h2>
+                        <h2><Link  to={'/forum/templateview/questions/'+currentObj.id +'/'}>{currentObj.title}</Link></h2>
                         <h5 style={{position:'absolute',bottom:'0',right:'10px'}}>
                         Asked By : {currentObj.user_profile.user.first_name}</h5>
                         </div>

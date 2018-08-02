@@ -87,7 +87,7 @@ class Register extends Component{
             // this.setState({
             //     status:true
             // });
-            this.props.history.push('/forum/login/');
+            this.props.history.push('/forum/templateview/login/');
         })
         .catch(e => {console.log (e);});
         }

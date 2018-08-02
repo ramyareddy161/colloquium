@@ -62,7 +62,7 @@ class Login extends Component{
                 this.props.updateUsername(formData.get('username'));
                 this.props.updateStatus(true);
                 this.setState(prev => ( {buttonName : 'Logout'}));
-                this.props.history.push('/forum/');
+                this.props.history.push('/forum/templateview/');
                 console.log("Redirecting....")
             }
             else{
