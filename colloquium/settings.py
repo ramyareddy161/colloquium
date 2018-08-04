@@ -182,7 +182,7 @@ DATABASES['default'].update(db_from_env)
 # DATABASES['default'].update(db_from_env)
 
 
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "staticfiles"),
 ]
