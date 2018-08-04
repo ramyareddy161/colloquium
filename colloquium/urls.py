@@ -21,8 +21,7 @@ from django.urls import path, include
 from django.views.generic import TemplateView
 from rest_framework.authtoken.views import obtain_auth_token
 from rest_framework_jwt.views import obtain_jwt_token
-
-from forum.viewspackage import RegistrationAPI
+from forum.viewspackage import RegistrationAPI, discussion_view
 
 app_name="forum"
 
@@ -34,8 +33,9 @@ urlpatterns = [
     url(r'^api-jwttoken-auth/', obtain_jwt_token),
     url(r'^api-basictoken-auth/', obtain_auth_token),
     url(r'^api/auth/', include('knox.urls')),
+    url(r'^', discussion_view.FrontendAppView.as_view()),
 
-    ]
+]
 
 
 if settings.DEBUG:

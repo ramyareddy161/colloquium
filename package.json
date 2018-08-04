@@ -53,7 +53,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "post-install":"npm run build"
+    "post-install": "npm run build"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -96,5 +96,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "webpack-bundle-tracker": "^0.3.0"
   }
 }

@@ -84,7 +84,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'colloquium.wsgi.application'
-
+# WSGI_APPLICATION = 'wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
@@ -167,21 +167,21 @@ WEBPACK_LOADER = {
 }
 
 
-# import dj_database_url
-#
-# db_from_env = dj_database_url.config(conn_max_age=500)
-# DATABASES['default'].update(db_from_env)
-
 import dj_database_url
-
-DATABASES = {
-      'default': dj_database_url.config(
-          default='sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
-      )
-  }
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
+import dj_database_url
+
+# DATABASES = {
+#       'default': dj_database_url.config(
+#           default='sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
+#       )
+#   }
+
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db_from_env)
 
 
 STATIC_URL = '/static/'
@@ -190,3 +190,26 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+
+REACT_APP_DIR = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+    os.path.join(REACT_APP_DIR, 'bundles',),
+]
+
+# MIDDLEWARE.append('myapp.middleware.dev_cors_middleware')
+
+
+from .settings import *
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "assets"),
+]
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+            'BUNDLE_DIR_NAME': 'bundles/',
+            'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.prod.json'),
+        }
+}
