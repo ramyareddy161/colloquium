@@ -178,28 +178,12 @@ DATABASES['default'].update(db_from_env)
 #       )
 #   }
 
-# db_from_env = dj_database_url.config(conn_max_age=500)
-# DATABASES['default'].update(db_from_env)
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# REACT_APP_DIR = os.path.join(BASE_DIR, STATIC_ROOT+"/bundles")
-#
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "assets"),
-# ]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# WEBPACK_LOADER = {
-#     'DEFAULT': {
-#             'BUNDLE_DIR_NAME': 'bundles/',
-#             'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.prod.json'),
-#         }
-# }
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 REACT_APP_DIR = os.path.join(BASE_DIR, 'static')
