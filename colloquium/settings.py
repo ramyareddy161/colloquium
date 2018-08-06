@@ -26,7 +26,7 @@ SECRET_KEY = '3vv2kgdn9b$)s6omz%h4p3)*l!2k5ydio0-uzm3)l=n7p1&2g+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1","ramyareddy16.herokuapp.com"]
+ALLOWED_HOSTS = ["*","ramyareddy16.herokuapp.com"]
 
 
 
@@ -181,46 +181,40 @@ DATABASES['default'].update(db_from_env)
 # db_from_env = dj_database_url.config(conn_max_age=500)
 # DATABASES['default'].update(db_from_env)
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-REACT_APP_DIR = os.path.join(BASE_DIR, STATIC_ROOT+"/bundles")
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "assets"),
-]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-WEBPACK_LOADER = {
-    'DEFAULT': {
-            'BUNDLE_DIR_NAME': 'bundles/',
-            'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.prod.json'),
-        }
-}
-
-STATIC_URL = '/staticfiles/'
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "staticfiles"),
-# ]
-# STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-#
-#
-# REACT_APP_DIR = os.path.join(BASE_DIR, 'staticfiles')
-#
-# STATICFILES_DIRS = [
-#     os.path.join(REACT_APP_DIR, 'bundles',),
-# ]
-#
-# # MIDDLEWARE.append('myapp.middleware.dev_cors_middleware')
-#
-#
-# from .settings import *
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# REACT_APP_DIR = os.path.join(BASE_DIR, STATIC_ROOT+"/bundles")
 #
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, "assets"),
 # ]
-#
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # WEBPACK_LOADER = {
 #     'DEFAULT': {
 #             'BUNDLE_DIR_NAME': 'bundles/',
 #             'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.prod.json'),
 #         }
 # }
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+REACT_APP_DIR = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_DIRS = [
+    os.path.join(REACT_APP_DIR, 'bundles',),
+]
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "assets"),
+]
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+            'BUNDLE_DIR_NAME': 'bundles/',
+            'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.prod.json'),
+        }
+}
