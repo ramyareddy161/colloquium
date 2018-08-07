@@ -6,7 +6,7 @@ class AddAnswer extends Component{
     cookies= new Cookies();
     state={
         isLoggedin:this.props.isLoggedin,
-        url:'/forum/api/questions/',
+        url:'https://ramyareddy16.herokuapp.com/forum/api/questions/',
         addanswer_url:'/addanswer/',
         description:null,
     }

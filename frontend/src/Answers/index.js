@@ -13,7 +13,7 @@ class Answers extends Component{
     }
 
     componentDidMount(){
-        fetch('/forum/api/questions/'+this.props.match.params.id+'/')
+        fetch('https://ramyareddy16.herokuapp.com/forum/api/questions/'+this.props.match.params.id+'/')
         .then(response => response.json())
         .then(responseJson => {
             this.setState({answersList:responseJson});
@@ -22,7 +22,7 @@ class Answers extends Component{
             console.log(e);
             console.log("Error occured in second catch");
         });
-        fetch('/forum/api/questions/', {
+        fetch('https://ramyareddy16.herokuapp.com/forum/api/questions/', {
                 method: 'get', 
                 }).then(function(response) {
                     return response.json();

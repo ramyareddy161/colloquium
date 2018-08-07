@@ -5,8 +5,8 @@ import { withRouter } from 'react-router';
 class Login extends Component{
     cookies = new Cookies();
     state = {
-        auth_url : '/api-basictoken-auth/',
-        jwt_url : '/api-jwttoken-auth/',
+        auth_url : 'https://ramyareddy16.herokuapp.com/api-basictoken-auth/',
+        jwt_url : 'https://ramyareddy16.herokuapp.com/api-jwttoken-auth/',
         buttonName : 'Login',
         username : "" ,
         password: ""

@@ -13,7 +13,7 @@ class Questions extends Component{
     }   
     
     componentDidMount() {
-        fetch('/forum/api/questions/', {
+        fetch('https://ramyareddy16.herokuapp.com/forum/api/questions/', {
                 method: 'get', 
                
                 }).then(function(response) {

@@ -8,8 +8,8 @@ class Register extends Component{
     }
     cookies = new Cookies();
     state = {
-        auth_url : '/api-basictoken-auth/',
-        jwt_url : '/api-jwttoken-auth/',
+        auth_url : 'https://ramyareddy16.herokuapp.com/api-basictoken-auth/',
+        jwt_url : 'https://ramyareddy16.herokuapp.com/api-jwttoken-auth/',
         buttonName : 'Register',
         first_name : "",
         last_name : "",
@@ -64,7 +64,7 @@ class Register extends Component{
             },
                 location: this.state.location,
         });
-        fetch('/forum/api/auth/register/',{
+        fetch('https://ramyareddy16.herokuapp.com/forum/api/auth/register/',{
             method:'POST',
             headers: new Headers({
                  'Content-Type': 'application/json',

@@ -7,7 +7,7 @@ class AddQuestion extends Component{
     state={
         isLoggedin:this.props.isLoggedin,
         token:this.props.token,
-        askquestion_url:'/forum/api/questions/addquestion/',
+        askquestion_url:'https://ramyareddy16.herokuapp.com/forum/api/questions/addquestion/',
         title:null,
         description:null,
     }
