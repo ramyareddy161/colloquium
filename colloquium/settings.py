@@ -161,12 +161,12 @@ REST_FRAMEWORK = {
 }
 
 
-WEBPACK_LOADER = {
-    'DEFAULT': {
-            'BUNDLE_DIR_NAME': 'bundles/',
-            'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.dev.json'),
-    }
-}
+# WEBPACK_LOADER = {
+#     'DEFAULT': {
+#             'BUNDLE_DIR_NAME': 'bundles/',
+#             'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.dev.json'),
+#     }
+# }
 
 
 import dj_database_url
@@ -181,19 +181,10 @@ DATABASES['default'].update(db_from_env)
 #   }
 
 
-STATIC_URL = '/sta' \
-             'tic/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]
+STATIC_URL = '/staticfiles/'
+
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
-REACT_APP_DIR = os.path.join(BASE_DIR, 'static')
-
-STATICFILES_DIRS = [
-    os.path.join(REACT_APP_DIR, 'bundles',),
-]
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "assets"),
@@ -211,4 +202,4 @@ WEBPACK_LOADER = {
 #     'JWT_RESPONSE_PAYLOAD_HANDLER': 'colloquium.views.auth.jwt_response_payload_handler',
 #     'JWT_EXPIRATION_DELTA': timedelta(days=2),
 #     'JWT_ALLOW_REFRESH': True,
-# }
+# }lspy
