@@ -14,7 +14,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-from datetime import timedelta
+from datetime import timedelta, datetime
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -64,7 +64,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
-
+CORS_ALLOW_CREDENTIALS=True
 ROOT_URLCONF = 'colloquium.urls'
 
 INTERNAL_IPS = ['127.0.0.1',]
@@ -102,6 +102,17 @@ WSGI_APPLICATION = 'colloquium.wsgi.application'
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'colloquiumdb',
+        'HOST': 'localhost',
+        'USER': "root",
+        'PASSWORD': "root"
+    }
+}
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -138,16 +149,6 @@ USE_TZ = True
 # STATIC_URL = '/static/'
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'colloquiumdb',
-        'HOST': 'localhost',
-        'USER': "root",
-        'PASSWORD': "root"
-    }
-}
-
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
@@ -161,12 +162,12 @@ REST_FRAMEWORK = {
 }
 
 
-# WEBPACK_LOADER = {
-#     'DEFAULT': {
-#             'BUNDLE_DIR_NAME': 'bundles/',
-#             'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.dev.json'),
-#     }
-# }
+WEBPACK_LOADER = {
+    'DEFAULT': {
+            'BUNDLE_DIR_NAME': 'bundles/',
+            'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.dev.json'),
+    }
+}
 
 
 import dj_database_url
@@ -184,7 +185,7 @@ DATABASES['default'].update(db_from_env)
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "assets"),
@@ -198,10 +199,3 @@ WEBPACK_LOADER = {
             'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.prod.json'),
         }
 }
-
-
-# JWT_AUTH = {
-#     'JWT_RESPONSE_PAYLOAD_HANDLER': 'colloquium.views.auth.jwt_response_payload_handler',
-#     'JWT_EXPIRATION_DELTA': timedelta(days=2),
-#     'JWT_ALLOW_REFRESH': True,
-# }lspy
