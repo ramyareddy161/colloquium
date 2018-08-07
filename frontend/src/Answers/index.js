@@ -13,7 +13,7 @@ class Answers extends Component{
     }
 
     componentDidMount(){
-        fetch('http://localhost:8000/forum/api/questions/'+this.props.match.params.id+'/')
+        fetch('/forum/api/questions/'+this.props.match.params.id+'/')
         .then(response => response.json())
         .then(responseJson => {
             this.setState({answersList:responseJson});
@@ -22,7 +22,7 @@ class Answers extends Component{
             console.log(e);
             console.log("Error occured in second catch");
         });
-        fetch('http://127.0.0.1:8000/forum/api/questions/', { 
+        fetch('/forum/api/questions/', {
                 method: 'get', 
                 }).then(function(response) {
                     return response.json();

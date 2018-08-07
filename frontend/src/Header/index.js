@@ -9,8 +9,8 @@ export class Header extends Component{
     cookies = new Cookies();
 
     state = {
-        auth_url : 'http://127.0.0.1:8000/api-basictoken-auth/',
-        jwt_url : 'http://127.0.0.1:8000/api-jwttoken-auth/',
+        auth_url : '/api-basictoken-auth/',
+        jwt_url : '/api-jwttoken-auth/',
         buttonName : 'Login'
 
     }

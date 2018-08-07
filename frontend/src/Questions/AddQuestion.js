@@ -7,7 +7,7 @@ class AddQuestion extends Component{
     state={
         isLoggedin:this.props.isLoggedin,
         token:this.props.token,
-        askquestion_url:'http://127.0.0.1:8000/forum/api/questions/addquestion/',
+        askquestion_url:'/forum/api/questions/addquestion/',
         title:null,
         description:null,
     }

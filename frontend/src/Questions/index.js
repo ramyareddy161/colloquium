@@ -13,7 +13,7 @@ class Questions extends Component{
     }   
     
     componentDidMount() {
-        fetch('http://127.0.0.1:8000/forum/api/questions/', { 
+        fetch('/forum/api/questions/', {
                 method: 'get', 
                
                 }).then(function(response) {

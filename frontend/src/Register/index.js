@@ -8,8 +8,8 @@ class Register extends Component{
     }
     cookies = new Cookies();
     state = {
-        auth_url : 'http://127.0.0.1:8000/api-basictoken-auth/',
-        jwt_url : 'http://127.0.0.1:8000/api-jwttoken-auth/',
+        auth_url : '/api-basictoken-auth/',
+        jwt_url : '/api-jwttoken-auth/',
         buttonName : 'Register',
         first_name : "",
         last_name : "",
@@ -64,7 +64,7 @@ class Register extends Component{
             },
                 location: this.state.location,
         });
-        fetch('http://127.0.0.1:8000/forum/api/auth/register/',{
+        fetch('/forum/api/auth/register/',{
             method:'POST',
             headers: new Headers({
                  'Content-Type': 'application/json',
