@@ -190,6 +190,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "assets"),
 ]
 
+REACT_APP_DIR = os.path.join(BASE_DIR, 'static')
+
 WEBPACK_LOADER = {
     'DEFAULT': {
             'BUNDLE_DIR_NAME': 'bundles/',

@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23b9e619-735d-4dbc-b253-4490b868bd1a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/bundles/asset-manifest.json" afterPath="$PROJECT_DIR$/assets/bundles/asset-manifest.json" />
-      <change beforePath="$PROJECT_DIR$/assets/bundles/index.html" afterPath="$PROJECT_DIR$/assets/bundles/index.html" />
-      <change beforePath="$PROJECT_DIR$/assets/bundles/js/main.453081b8.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/bundles/js/main.453081b8.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/bundles/service-worker.js" afterPath="$PROJECT_DIR$/assets/bundles/service-worker.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Answers/AddAnswer.js" afterPath="$PROJECT_DIR$/frontend/src/Answers/AddAnswer.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Answers/index.js" afterPath="$PROJECT_DIR$/frontend/src/Answers/index.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Authentication/Login.js" afterPath="$PROJECT_DIR$/frontend/src/Authentication/Login.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Header/index.js" afterPath="$PROJECT_DIR$/frontend/src/Header/index.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Questions/AddQuestion.js" afterPath="$PROJECT_DIR$/frontend/src/Questions/AddQuestion.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Questions/index.js" afterPath="$PROJECT_DIR$/frontend/src/Questions/index.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Register/index.js" afterPath="$PROJECT_DIR$/frontend/src/Register/index.js" />
-      <change beforePath="$PROJECT_DIR$/webpack-stats.prod.json" afterPath="$PROJECT_DIR$/webpack-stats.prod.json" />
+      <change beforePath="$PROJECT_DIR$/colloquium/settings.py" afterPath="$PROJECT_DIR$/colloquium/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,11 +16,11 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/colloquium/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="191" column="0" lean-forward="true" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
               <folding>
                 <element signature="e#4429#4444#0" expanded="false" />
-                <element signature="e#4966#4980#0" expanded="false" />
+                <element signature="e#5016#5030#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -78,7 +65,6 @@
         <option value="$PROJECT_DIR$/colloquium/production_settings.py" />
         <option value="$PROJECT_DIR$/staticfiles/bundles/index.html" />
         <option value="$PROJECT_DIR$/colloquium/wsgi.py" />
-        <option value="$PROJECT_DIR$/colloquium/settings.py" />
         <option value="$PROJECT_DIR$/frontend/src/Authentication/Login.js" />
         <option value="$PROJECT_DIR$/frontend/src/Questions/AddQuestion.js" />
         <option value="$PROJECT_DIR$/frontend/src/Answers/AddAnswer.js" />
@@ -86,6 +72,7 @@
         <option value="$PROJECT_DIR$/frontend/src/Header/index.js" />
         <option value="$PROJECT_DIR$/frontend/src/Questions/index.js" />
         <option value="$PROJECT_DIR$/frontend/src/Register/index.js" />
+        <option value="$PROJECT_DIR$/colloquium/settings.py" />
       </list>
     </option>
   </component>
@@ -232,7 +219,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.4940476" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.54738563" sideWeight="0.5349702" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29248366" sideWeight="0.5349702" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -552,11 +539,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/colloquium/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="191" column="0" lean-forward="true" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
           <folding>
             <element signature="e#4429#4444#0" expanded="false" />
-            <element signature="e#4966#4980#0" expanded="false" />
+            <element signature="e#5016#5030#0" expanded="false" />
           </folding>
         </state>
       </provider>
