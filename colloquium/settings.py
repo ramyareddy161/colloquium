@@ -181,9 +181,9 @@ DATABASES['default'].update(db_from_env)
 #   }
 
 
-STATIC_URL = '/staticfiles/'
+STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 STATICFILES_DIRS = [
